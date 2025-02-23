@@ -56,9 +56,8 @@ def build_mlp(
 
     layers.append(nn.Linear(size, output_size))
     layers.append(output_activation)
-
     model = nn.Sequential(*layers)
-    raise model
+    return model
 
 
 device = None
